@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC
+    "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title> Other Links </title>
+  <script type="text/javascript" src="links.js"></script>
+  <script type="text/javascript">
+    function rollOver(pic) {
+      pic.src = pic.id + 2 + ".png";
+    }
+
+    function rollOut(pic) {
+      pic.src = pic.id + 1 + ".png";
+    }
+  </script>
+  <link rel="stylesheet" href="links.css" type="text/css">
+</head>
+<body>
+  <h1><img src="title.png" alt="Andrew's Website"></h1>
+  <ul id="links">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../master/master.html">Mastermind</a></li>
+    <li><a href="../maze/maze.html">Maze Generator</a></li>
+    <li><a href="../picture/picture.html">Picture Game</a></li>
+    <li><a href="../links/links.html">Other Links</a></li>
+  </ul>
+  <img id="cabrillo" src="cabrillo1.png" onmouseover="rollOver(this)" onmouseout="rollOut(this)" onclick="link('http://www.cabrillo.edu')">
+  <img id="google" src="google1.png" onmouseover="rollOver(this)" onmouseout="rollOut(this)" onclick="link('http://www.google.com')">
+  <img id="andrew" src="andrew1.png" onmouseover="rollOver(this)" onmouseout="rollOut(this)" onclick="link('../home.html')">
+  <form action="http://www.edparrish.net/common/echo.php"
+    name="wordForm" id="wordForm" method="post" onsubmit="return verify()">
+    Enter in a word:<br><input type="text" id="word" name="word">
+    <div id="wordError" style="color:red">Please enter a word!</div>
+  </form>
+  <br><br><br>
+  <br><br><br>
+  <address>Created by Andrew Evans</address>
+</body>
+</html>

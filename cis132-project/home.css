@@ -1,0 +1,48 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  border-bottom: thin dotted;
+  margin-bottom: 6px;
+}
+
+address {
+  border-top: thin dotted;
+  text-align: right;
+}
+
+#links {
+  list-style-type: none;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid black;
+}
+
+#links li {
+  background: #E8E8E8;
+  border-left: 10px solid black;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+#links a {
+  text-decoration: none 
+}
+
+#links a:hover {
+color:red;
+}
+
+#intro {
+  position: absolute;
+  width: 400px;
+  left: 250px;
+}
+
+#current {
+  position: absolute;
+  left: 380px;
+  top: 30px;
+}

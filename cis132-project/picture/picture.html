@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC
+    "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title> Pictures </title>
+  <script type="text/javascript" src="picture.js"></script>
+  <link rel="stylesheet" href="picture.css" type="text/css">
+</head>
+<body onload="init()">
+  <h1><img src="title.png" alt="Andrew's Website"></h1>
+  <img id="gameTitle" src="picture.png" alt="Picture Game">
+  <ul id="links">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../master/master.html">Mastermind</a></li>
+    <li><a href="../maze/maze.html">Maze Generator</a></li>
+    <li><a href="picture.html">Picture Game</a></li>
+    <li><a href="../links/links.html">Other Links</a></li>
+  </ul>
+  <img id="pic" src="animal2.jpg" onclick="change(this)">
+  <p id="description">Guess the animal in the altered picture!</p>
+  <form id="picForm">
+    <input type="button" id="submit" onclick="verify()" value="Submit Answer">
+    <input type="text" id="answer" name="answer">
+    <span id="ansResult"></span>
+  </form>
+  <a id="credit" href="http://www.animalsgallery.com/cats/himalayan-cat-pictures/">Image Source (SPOILER)</a>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <address>Created by Andrew Evans</address>
+</body>
+</html>

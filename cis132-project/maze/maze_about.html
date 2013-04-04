@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC
+    "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+<body style="background:lightblue;">
+  <h3 style="text-decoration:underline">What is Maze Generator?</h3>
+  <p>Maze Generator is exactly what it sounds like, a maze generator!</p>
+  <h3 style="text-decoration:underline">Okay...How does it work?</h3>
+  <p>The maze in maze generator starts out as a bunch of single spaces that aren't connected to each other.  Each space is in its own set.  When generation starts, a space is selected randomly and linked with an adjacent space (their seperating walls are torn down).  These two spaces become part of the same (now bigger) set (a union of sets).  Afterwards, another new space is selected randomly and linked up with one of its adjacent spaces.  This keeps going on for a while.<br><br>
+
+  If a space that is a part of a singleton set (as in a set containing one element) links with another space in a non-singleton set, the sets become one (a union of sets again).
+  If a space that is a part of a non-singleton set (as in there is more in the set than just that space) links with another space in a non-singleton set, the sets become one (another union of sets). <br><br>
+
+  It is important to understand that because the randomly selected space links up with only adjacent spaces (and become part of the same set), it is guaranteed that one can move from either space to other.  Because of this, new spaces linked up to this set will also gain this property.  If every space in a set can acess any other space in the same set, then when two spaces that are each a part of a different, but big set, the two sets combine, allowing every space in either set to access any other space in either set.  <br><br>
+
+  Once every set has linked with each other, one gigantic set is left (holds every space in the maze).  This is when generation stops and the maze becomes what you see on the web page.
+  </p>
+  <h3 style="text-decoration:underline">WOW, that's a lot to absorb right now!  Okay, Okay, one more question:  What is up with the little guy in the bottom right and the red things in the maze?</h3>
+  <p>To make the maze somewhat interactive, I have set up a little game.  You control the character on the bottom right and move him to the goal in the top left.  However, you can't leave the maze unless you have the two red...items with you.  To pick these up, you just move the character over them.  There is no scoring or time involved so traverse the maze at your leisure. Enjoy!</p>
+
+  <p><strong>Goal:</strong><br>
+  Collect the two red items and exit the maze in the top left corner.<br>
+  <strong>Controls:</strong><br>
+  Arrow Keys to move.<br>
+  <strong>End Game:</strong><br>
+  The game ends when you have completed the goal.  Your character will cease to function until you generate a new maze.</p>
+</body>
+</html>

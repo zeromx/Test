@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC
+    "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title> Mastermind </title>
+  <script type="text/javascript" src="master.js"></script>
+  <link rel="stylesheet" href="master.css" type="text/css">
+</head>
+<body onclick="hideMenu()" onload="hideStuff()">
+  <h1><img src="title.png" alt="Andrew's Website"></h1>
+  <img id="gameTitle" src="mastermind.png" alt="Mastermind">
+  <ul id="links">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="master.html">Mastermind</a></li>
+    <li><a href="../maze/maze.html">Maze Generator</a></li>
+    <li><a href="../picture/picture.html">Picture Game</a></li>
+    <li><a href="../links/links.html">Other Links</a></li>
+  </ul>
+  <div id="difficulty">
+    <a href="#" id="difficultySelect" onmouseover="popMenu('difficultyMenu')">Select Difficulty:</a>
+    <ul id="difficultyMenu">
+      <li><a href="#" onclick="initGame(15)">Easy</a></li>
+      <li><a href="#" onclick="initGame(12)">Medium</a></li>
+      <li><a href="#" onclick="initGame(9)">Hard</a></li>
+      <li><a href="#" onclick="initGame(6)">Insane</a></li>
+    </ul>
+  </div>
+  <strong><div id="turns">Guesses Left: ??</div></strong>
+  <img id="answerPic1" src="ball0.png" alt="Blank Ball">
+  <img id="answerPic2" src="ball0.png" alt="Blank Ball">
+  <img id="answerPic3" src="ball0.png" alt="Blank Ball">
+  <img id="answerPic4" src="ball0.png" alt="Blank Ball">
+  <img id="secretText" src="secret.png" alt="Secret Code">
+  <img id="playerPic1" src="ball1.png" alt="Ball 1" onclick="changeImage(this)">
+  <img id="playerPic2" src="ball1.png" alt="Ball 2" onclick="changeImage(this)">
+  <img id="playerPic3" src="ball1.png" alt="Ball 3" onclick="changeImage(this)">
+  <img id="playerPic4" src="ball1.png" alt="Ball 4" onclick="changeImage(this)">
+  <img id="guessText" src="guess.png" alt="Your Guess">
+  <table id="history" border="1" width="180">
+    <tr>
+      <th colspan="2">History</th>
+    </tr>
+  </table>
+  <form id="masterForm">
+    <input id="guessButton" type="button" value="Guess!" onclick="makeGuess()">
+    <input id="rulesButton" type="button" value="Rules" onclick="dispRules()">
+    <input id="startButton" type="button" value="Start Game" onclick="start(this)">
+    <input id="againButton" type="button" value="Play Again?" onclick="start(this)">
+  </form>
+  <div id="inProgress">Game In Progress!</div>
+  <br>    <br>
+  <br>    <br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br><address>Created by Andrew Evans</address>
+</body>
+</html>

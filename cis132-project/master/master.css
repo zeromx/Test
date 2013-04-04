@@ -1,0 +1,177 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  border-bottom: thin dotted;
+  margin-bottom: 6px;
+}
+
+address {
+  border-top: thin dotted;
+  text-align: right;
+}
+
+#links {
+  list-style-type: none;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid black;
+}
+
+#links li {
+  background: #E8E8E8;
+  border-left: 10px solid black;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+#links a {
+  text-decoration: none 
+}
+
+#links a:hover {
+color:red;
+}
+
+#gameTitle {
+  position: absolute;
+  width: 300px;
+  left: 200px
+}
+
+#answerPic1 {
+  position: absolute;
+  left: 200px;
+  top: 250px
+}
+
+#answerPic2 {
+  position: absolute;
+  left: 275px;
+  top: 250px
+}
+
+#answerPic3 {
+  position: absolute;
+  left: 350px;
+  top: 250px
+}
+
+#answerPic4 {
+  position: absolute;
+  left: 425px;
+  top: 250px;
+}
+
+#secretText {
+  position: absolute;
+  left: 200px;
+  top: 200px
+}
+
+#playerPic1 {
+  position: absolute;
+  left: 200px;
+  top: 375px
+}
+
+#playerPic2 {
+  position: absolute;
+  left: 275px;
+  top: 375px
+}
+
+#playerPic3 {
+  position: absolute;
+  left: 350px;
+  top: 375px
+}
+
+#playerPic4 {
+  position: absolute;
+  left: 425px;
+  top: 375px
+}
+
+#guessText {
+  position: absolute;
+  left: 200px;
+  top: 325px
+}
+
+#history {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+}
+
+#difficulty {
+  position: absolute;
+  left: 225px;
+  top: 125px;
+  background: white;
+}
+
+#difficulty a{
+  
+  text-decoration: none;
+  color: red;
+}
+
+#difficultyMenu {
+  position: absolute;
+  left: 70px;
+  top: 0px;
+  visibility: hidden;
+  list-style-type: none;
+  margin: 0;
+}
+
+#difficultyMenu a:hover{
+  color:blue;
+}
+
+#difficultyMenu li{
+  background: white;
+  text-decoration: none;
+  color: red;
+}
+
+#difficultyMenu li:hover{
+  background: lightgray;
+}
+
+#turns {
+  position: absolute;
+  left: 389px;
+  top: 225px;
+}
+
+#guessButton {
+  position: absolute;
+  left: 400px;
+  top: 345px;
+}
+#rulesButton {
+  position: absolute;
+  left: 410px;
+  top: 122px;
+}
+#startButton {
+  position: absolute;
+  left: 225px;
+  top: 122px;
+}
+#againButton {
+  position: absolute;
+  left: 225px;
+  top: 122px;
+}
+
+#inProgress {
+  position: absolute;
+  left: 225px;
+  top: 125px;
+}

@@ -1,0 +1,60 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  border-bottom: thin dotted;
+  margin-bottom: 6px;
+}
+
+address {
+  border-top: thin dotted;
+  text-align: right;
+}
+
+#links {
+  list-style-type: none;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid black;
+}
+
+#links li {
+  background: #E8E8E8;
+  border-left: 10px solid black;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+#links a {
+  text-decoration: none 
+}
+
+#links a:hover {
+color:red;
+}
+
+#pictures {
+  position: absolute;
+  left: 200px;
+  top: 155px;
+  width: 600px;
+}
+
+#gameTitle {
+  position: absolute;
+  width: 300px;
+  left: 200px;
+}
+
+#genButton {
+  position: absolute;
+  top: 125px;
+  left: 200px;
+}
+#aboutButton {
+  position: absolute;
+  top: 125px;
+  left: 350px;
+}
